@@ -12,7 +12,7 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   if (license !== "None") {
     return (
-      `\n* [License](#license)\n`
+      `[License](#license)`
     )
   }
   return ''
@@ -32,37 +32,38 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# <${data.name}>
+  return `# <${data.name}>  
   ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-  ${renderLicenseBadge(data.license)}
-  ## Description
-  What was your motivation?
-    - ${data.motivation}
-  Why did you build this project?
-    - ${data.reason}
-  What problem does it solve?
-    - ${data.problem}
-  What did you learn making this project?
-    - ${data.learn}
-  
+  ${renderLicenseBadge(data.license)}  
+
+  ## Description  
+  ### What was your motivation?  
+    - ${data.motivation}  
+  ### Why did you build this project?  
+    - ${data.reason}  
+  ### What problem does it solve?  
+    - ${data.problem}  
+  ### What did you learn making this project?  
+    - ${data.learn}  
+   
   ## Table of Contents 
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Credits](#credits)
-  - ${renderLicenseLink(data.license)}
+  - [Installation](#installation)  
+  - [Usage](#usage)  
+  - [Credits](#credits)  
+  - ${renderLicenseLink(data.license)}  
 
-  ## Installation
-  The application will be invoked by using the following command:
-    ${data.install}
+  ## Installation  
+  ### The application will be invoked by using the following command:  
+      ${data.install}  
 
-  ## Usage
-      ![alt text](assets/images/screenshot.png)
+  ## Usage  
+  ![screenshot](assets/images/screenshot.png)  
       
-  ## Credits
-  Contact me at: [email](${data.email} "email")
-  Github can be located at: [Github](https://github.com/${data.github} "Github")
-  
-  ${renderLicenseSection(data.license)}
+  ## Credits  
+  Contact me at: [email](${data.email} "email")  
+  Github can be located at: [Github](https://github.com/${data.github} "Github")  
+    
+  ${renderLicenseSection(data.license)}  
   ---`;
 }
 
