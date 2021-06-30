@@ -61,7 +61,7 @@ function generateMarkdown(data) {
       
   ## Credits  
   Contact me at: [email](${data.email} "email")  
-  Github can be located at: [Github](https://github.com/${data.github} "Github")  
+  Github can be found at: [Github](https://github.com/${data.github} "Github")  
     
   ${renderLicenseSection(data.license)}  
   ---`;

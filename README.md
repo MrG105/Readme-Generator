@@ -23,7 +23,8 @@
      node index.js  
 
 ## Usage  
-![screenshot](assets/images/screenshot.PNG)  
+![screenshot](assets/images/screenshot.PNG)
+Demo Video Linked at:[Video](https://drive.google.com/file/d/1NawKPxK5rVynIfZTPToBiHLrBSHPdgqA/view "Demo Video")  
       
   ## Credits  
   Contact me at: [email](poo328@my.utsa.edu "email")  
